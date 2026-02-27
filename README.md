@@ -8,9 +8,10 @@ CREATE DATABASE polizas_db;
 spring.datasource.url=jdbc:mysql://localhost:3306/polizas_db?useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
 spring.datasource.password=TU_PASSWORD
-
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.open-in-view=false
 
 # Ejecutar el proyecto
@@ -23,7 +24,7 @@ El servidor iniciará en:
 
 http://localhost:8080
 
-# Datos Iniciales (Opcional)
+# Datos Iniciales
 
 Crear una póliza manualmente:
 

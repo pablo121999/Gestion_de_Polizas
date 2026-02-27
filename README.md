@@ -47,7 +47,7 @@ GET http://localhost:8080/polizas?tipo=COLECTIVA&estado=ACTIVA
 POST http://localhost:8080/polizas/1/riesgos
 
 📌 Renovar póliza
-POST http://localhost:8080/polizas/1/renovar?ipc=0.05
+POST http://localhost:8080/polizas/1/renovar?ipc=0.01
 
 📌 Cancelar póliza
 POST http://localhost:8080/polizas/1/cancelar

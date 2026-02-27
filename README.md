@@ -3,7 +3,7 @@
 # Crear Base de Datos MySQL
 CREATE DATABASE polizas_db;
 
-Verificar que application.properties tenga configurado:
+# Verificar que application.properties tenga configurado:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/polizas_db?useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
@@ -36,14 +36,9 @@ Todas las peticiones requieren el siguiente header obligatorio:
 
 x-api-key: 123456
 
-En Postman agregar en la sección Headers:
 
-KEY	VALUE
-x-api-key	123456
+# Endpoints Disponibles
 
-# API
-
-📌 Endpoints Disponibles
 📌 Listar pólizas
 GET http://localhost:8080/polizas?tipo=COLECTIVA&estado=ACTIVA
 📌 Agregar riesgo a una póliza

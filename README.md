@@ -41,12 +41,16 @@ x-api-key: 123456
 
 📌 Listar pólizas
 GET http://localhost:8080/polizas?tipo=COLECTIVA&estado=ACTIVA
+
 📌 Agregar riesgo a una póliza
 POST http://localhost:8080/polizas/1/riesgos
+
 📌 Renovar póliza
 POST http://localhost:8080/polizas/1/renovar?ipc=0.05
+
 📌 Cancelar póliza
 POST http://localhost:8080/polizas/1/cancelar
+
 📌 Cancelar riesgo
 POST http://localhost:8080/riesgos/1/cancelar
 

@@ -78,7 +78,7 @@ POST http://localhost:8080/core-mock/evento
 Body JSON
 {
   "evento": "ACTUALIZACION",
-  "polizaId": 555
+  "polizaId": 1
 }
 
 Este endpoint solo registra en logs que el evento fue enviado correctamente.

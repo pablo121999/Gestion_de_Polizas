@@ -85,5 +85,4 @@ Este endpoint solo registra en logs que el evento fue enviado correctamente.
 
 # 👨‍💻 Autor
 
-Pablo
-Proyecto académico / técnico – Gestión de Pólizas
+Pablo Andres Aroca Garcia

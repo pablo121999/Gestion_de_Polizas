@@ -6,12 +6,19 @@ CREATE DATABASE polizas_db;
 # Verificar que application.properties tenga configurado:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/polizas_db?useSSL=false&serverTimezone=UTC
+
 spring.datasource.username=root
+
 spring.datasource.password=TU_PASSWORD
+
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.format_sql=true
+
 spring.jpa.open-in-view=false
 
 # Ejecutar el proyecto
@@ -41,18 +48,23 @@ x-api-key: 123456
 # Endpoints Disponibles
 
 📌 Listar pólizas
+
 GET http://localhost:8080/polizas?tipo=COLECTIVA&estado=ACTIVA
 
 📌 Agregar riesgo a una póliza
+
 POST http://localhost:8080/polizas/1/riesgos
 
 📌 Renovar póliza
+
 POST http://localhost:8080/polizas/1/renovar?ipc=0.01
 
 📌 Cancelar póliza
+
 POST http://localhost:8080/polizas/1/cancelar
 
 📌 Cancelar riesgo
+
 POST http://localhost:8080/riesgos/1/cancelar
 
 # Mock Externo Obligatorio
@@ -60,7 +72,9 @@ POST http://localhost:8080/riesgos/1/cancelar
 Endpoint simulado para enviar eventos al CORE.
 
 📌 Enviar evento
+
 POST http://localhost:8080/core-mock/evento
+
 Body JSON
 {
   "evento": "ACTUALIZACION",
@@ -68,7 +82,6 @@ Body JSON
 }
 
 Este endpoint solo registra en logs que el evento fue enviado correctamente.
-
 
 # 👨‍💻 Autor
 
